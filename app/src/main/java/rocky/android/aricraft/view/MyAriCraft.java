@@ -31,7 +31,16 @@ public class MyAriCraft {
         } else {
             aY = -1*aY;
         }
-
+        if(Math.abs(move2X-x) > aX/2) {
+            x += aX;
+        } else {
+            x = move2X;
+        }
+        if(Math.abs(move2Y-y) > aY/2) {
+            y += aY;
+        } else {
+            y = move2Y;
+        }
     }
 
     public void draw() {}
